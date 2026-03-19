@@ -1,0 +1,128 @@
+/* Global Font & Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Title Centered */
+.app h1 {
+  text-align: center;
+  color: #007bff;
+  margin-top: 30px;
+  font-size: 2.5rem;
+}
+
+/* Container */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Form Box */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.form input {
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: #005ecb;
+}
+
+/* Grid for Product Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Product Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 390px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+  height: 40px;
+  overflow: hidden;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin: 3px 0;
+  height: 30px;
+  overflow: hidden;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.actions button {
+  padding: 8px 14px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background-color: #005ecb;
+}
